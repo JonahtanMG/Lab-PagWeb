@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicaciones de Pi</title>
+    <link rel="stylesheet" href="css/general.css">
 </head>
 <body>
-    <header>
-        <!-- Aqui va un titulo -->
-        <hr>
-        <h2>Probabilidad y Estadística: La Aguja de Buffon y la Campana de Gauss</h2>
-        <hr>
+
+    <header class="header">
+    <div class="contenedor">
+        <hr class="separador">
+        <h1 class="titulo">Probabilidad y Estadística: La Aguja de Buffon y la Campana de Gauss</h1>
         <!-- Aqui van los hipervinculos -->
-        <nav>
-            <details>
-                <summary>MENU</summary>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="tecnologia.html">Tecnologia</a></li>
-                    <li><a href="curiosidades.html">Curiosidades</a></li>
-                    <li><a href="registro.html">Registrarse</a></li>
-                </ul>
-            </details>
-        </nav>
-        <hr>
+        <hr class="separador">
+    </div>
+     <nav class="nav">
+        <details class="nav_details">
+            <summary class="nav_summary">MENU</summary>
+            <ul class="nav_lista">
+                <li class="nav_item"><a href="index.html" class="nav_link">Inicio</a></li>
+                <li class="nav_item"><a href="registro.html" class="nav_link">Registrase</a></li>
+                <li class="nav_item"><a href="historia.html" class="nav_link">Historia</a></li>
+                <li class="nav_item"><a href="curiosidades.html" class="nav_link">Curiosidades</a></li>
+                <li class="nav_item"><a href="tecnologia.html" class="nav_link">En la tecnologia</a></li>
+                <li class="nav_item"><a href="aplicaciones.html" class="nav_link">Aplicaciones</a></li>
+            </ul>
+        </details>
+     </nav>
+    <hr class="separador">
     </header>
     
     <main>
@@ -57,15 +61,22 @@
             </ul>
             </article>
         </ol>
-        <!-- Aqui va un hipervinculo para volver arriba -->
-        <hr>
-        <a href="#Top">Volver arriba</a>
-        <hr>
+         <!-- Aqui va un hipervinculo para volver arriba -->
+        <hr class="separador">
+        <div class="arriba">
+            <a href="#Top" class="boton_arriba">
+                <span>Volver arriba</span>    
+            </a>
+        </div>
+        <hr class="separador">
     </main>
 
-    <footer>
-        <p>&copy; Laboratorio de Introduccion al Desarrollo Web</p>
-        <address>Contacto: jmamanigut@unsa.edu.pe</address>
+    <footer class="footer">
+        <div class="contenedor_footer">
+            <p class="copy">&copy; Laboratorio de Introduccion al Desarrollo Web</p>
+            <address class="copy">Contacto: <a href="mailto:jmamanigut@unsa.edu.pe" class="email">jmamanigut@unsa.edu.pe</a></address>
+        </div>
     </footer>
+
 </body>
 </html>

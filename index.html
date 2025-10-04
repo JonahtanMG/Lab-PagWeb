@@ -4,58 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Numero Pi</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index_styles.css">
 </head>
 <body>    
-    <header>
-    <hr>
-        <h1>El número Pi</h1>
-    <!-- Aqui van los hipervinculos -->
-    <hr>
-     <nav>
-        <details>
-            <summary>MENU</summary>
-            <ul>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="curiosidades.html">Curiosidades</a></li>
-                <li><a href="tecnologia.html">En la tecnologia</a></li>
-                <li><a href="aplicaciones.html">Aplicaciones</a></li>
-                <li><a href="registro.html">Registrarse</a></li>
+
+    <header class="header">
+    <div class="contenedor">
+        <hr class="separador">
+        <h1 class="titulo">El número Pi</h1>
+        <!-- Aqui van los hipervinculos -->
+        <hr class="separador">
+    </div>
+     <nav class="nav">
+        <details class="nav_details">
+            <summary class="nav_summary">MENU</summary>
+            <ul class="nav_lista">
+                <li class="nav_item"><a href="index.html" class="nav_link">Inicio</a></li>
+                <li class="nav_item"><a href="registro.html" class="nav_link">Registrase</a></li>
+                <li class="nav_item"><a href="historia.html" class="nav_link">Historia</a></li>
+                <li class="nav_item"><a href="curiosidades.html" class="nav_link">Curiosidades</a></li>
+                <li class="nav_item"><a href="tecnologia.html" class="nav_link">En la tecnologia</a></li>
+                <li class="nav_item"><a href="aplicaciones.html" class="nav_link">Aplicaciones</a></li>
             </ul>
         </details>
      </nav>
-    <hr>
+    <hr class="separador">
     </header>
 
     <main>
-        <article>
+        <article class="main_articulo">
             <!-- Aqui van parrafos e imagenes -->
             <p>Es una constante matemática que representa la proporción entre la longitud de la circunferencia <br>
             de un círculo y su diámetro. Es un número irracional, lo que significa que tiene un <Strong>número infinito</Strong><br>
             de decimales que <strong>no se repiten en un patrón.</strong>
             </p>
         </article>
-        <figure>
+        <figure class="figura">
             <img src="Img/NumeroPi.png" alt="Imagen_Pi" width="100">    
         </figure>
+
+        <div class="valor">
             <h3>Su valor aproximado es:</h3>
             <p>3.1415926535897932</p>
-        <figure>
+        </div>
+            
+        <figure class="figura">
             <img src="Img/Pi_Valores.png" alt="Imagen_ValorPi" width="100">
-        </figure>    
-            <h3>Características fundamentales:</h3>
-        <ul>
-            <li><b>Es irracional:</b> No puede expresarse como una fracción exacta de dos números.</li>
-            <li><b>Es trascendente:</b> No es la solución de ninguna ecuación algebraica con coeficientes enteros.</li>
-        </ul>
+        </figure>   
+        
+        <div class="caracteristicas">
+                <h3>Características fundamentales:</h3>
+            <ul>
+                <li><b>Es irracional:</b> No puede expresarse como una fracción exacta de dos números.</li>
+                <li><b>Es trascendente:</b> No es la solución de ninguna ecuación algebraica con coeficientes enteros.</li>
+            </ul>
+        </div>
+        
         <!-- Aqui va un hipervinculo para volver arriba -->
-        <hr>
-        <a href="#Top">Volver arriba</a>
-        <hr>
+        <hr class="separador">
+        <div class="arriba">
+            <a href="#Top" class="boton_arriba">
+                <span>Volver arriba</span>    
+            </a>
+        </div>
+        <hr class="separador">
     </main>
     
-    <footer>
-        <p>&copy; Laboratorio de Introduccion al Desarrollo Web</p>
-        <address>Contacto: jmamanigut@unsa.edu.pe</address>
+    <footer class="footer">
+        <div class="contenedor_footer">
+            <p class="copy">&copy; Laboratorio de Introduccion al Desarrollo Web</p>
+            <address class="copy">Contacto: <a href="mailto:jmamanigut@unsa.edu.pe" class="email">jmamanigut@unsa.edu.pe</a></address>
+        </div>
     </footer>
 
 </body>

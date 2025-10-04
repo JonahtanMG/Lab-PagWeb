@@ -1,0 +1,84 @@
+.header{
+    background-color: #f4f7fa;
+    
+}
+.separador{
+    border-top: 2px;
+}
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.nav{
+    margin: 0px 0px;
+    padding: 5px 600px;
+}
+.nav_summary{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav_summary:hover {
+    background-color: #0056b3;
+}
+.nav_lista{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+.nav_item {
+    border: 1px solid #e9ecef;
+    
+}
+.nav_link{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 15px 15px;
+}
+.nav_link:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+.footer{
+    background-color: #007bff;
+    padding: 15px;
+}
+.contenedor_footer{
+    display: flex;
+    flex-direction: column;
+}
+.copy{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.email{
+    color: white;
+    text-decoration: none;
+}
+.email:hover{
+    color: #1abc9c;
+    text-decoration: underline;
+}
+.arriba{
+    display: inline-block;
+    background-color: #007bff;
+    padding: 12px 17px;
+    border-radius: 10px;
+}
+.boton_arriba{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 24px 34px;
+    text-align: center;
+}
+.arriba:hover {
+    background-color: #0056b3;
+}
