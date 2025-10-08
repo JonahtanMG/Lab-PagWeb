@@ -1,17 +1,25 @@
 .header{
     background-color: #f4f7fa;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
 }
 .separador{
     border-top: 2px;
+    width: 100%;
 }
+.contenedor {
+    width: 100%;
+}
+
 .titulo{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 .nav{
     margin: 0px 0px;
-    padding: 5px 600px;
+    width: 40vh;
+    padding: 5px;
 }
 .nav_summary{
     background-color: #007bff;
@@ -31,6 +39,7 @@
     background-color: white;
     border: 1px solid #dee2e6;
     border-radius: 4px;
+    list-style: none;
 }
 .nav_item {
     border: 1px solid #e9ecef;
@@ -45,6 +54,7 @@
 .nav_link:hover {
     background-color: #f8f9fa;
     color: #007bff;
+    width: 100%;
 }
 .footer{
     background-color: #007bff;

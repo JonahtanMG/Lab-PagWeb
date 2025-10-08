@@ -1,4 +1,11 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main_articulo{
+    width: 40%;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     border-left: 5px solid #4a6491;
@@ -9,10 +16,16 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center  ;
 }
+
+.main_articulo:hover{
+    box-shadow: 1px 4px 12px rgba(0, 0, 0, 5);
+}
+
 .figura{
     display: flex;
     justify-content: center;
 }
+
 .valor{
     background-color: #92b0e4;
     border-radius: 10px;
@@ -32,6 +45,14 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border: 2px dashed #4a6491;
 }
+
+.valor:hover{
+    box-shadow: 1px 4px 12px rgba(0, 0, 0, 5);
+}
+
+.valor p:hover{
+    background-color: #e7e188;
+}
 .caracteristicas{
     background: white;
     border-radius: 10px;
@@ -43,6 +64,11 @@
     border-bottom: 2px solid #e1f0ff;
     padding-bottom: 5px;
 }
+
+.caracteristicas li:hover{
+    box-shadow: 1px 4px 12px rgba(0, 0, 0, 5);
+}
+
 .caracteristicas li{
     padding: 15px 15px;
     margin: 15px;
