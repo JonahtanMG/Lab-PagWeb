@@ -1,5 +1,5 @@
-        
 body {
+    font-family: Arial, Helvetica, sans-serif;
     color: #333;
     background-color: #f9f9f9;
 }
@@ -12,14 +12,14 @@ main {
     flex-direction: column;
     gap: 30px;
 }
-        
+
 article {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-        
+
 article h3 {
     font-weight: bold;
 }
@@ -35,3 +35,7 @@ figure img {
     max-width: 100%;
 }
 
+figure a {
+    text-decoration: none;
+    color: #333;
+}

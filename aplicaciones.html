@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicaciones de Pi</title>
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/aplicaciones.css">
 </head>
+
 <body>
 
     <header>
@@ -31,37 +34,40 @@
             </ul>
         </nav>
     </header>
-    
-    <main>
-         <!-- Aqui van subtitulos junto junto con listas -->
-        <ol>
-            <article>
-                <li><h3>El problema de la aguja de Buffon</h3></li>
-                <p>Este es un ejemplo clásico y fascinante que une π con la probabilidad de una manera contraintuitiva.</p>
-                <ul>
-                    <li>¿En qué consiste? Imagina que tienes un suelo hecho con listones de madera paralelos, todos del mismo ancho. <br>
-                        Lanzas una aguja de longitud igual o menor al ancho entre listones al azar sobre el suelo.</li>
-                    <li>La probabilidad (P) de que la aguja cruce o toque una de las líneas entre los listones es: <br>
-                        P = (2 * longitud de la aguja) / (π * distancia entre líneas)</li>
-                        <li>Si lanzas la aguja muchas veces y cuentas las veces que cruza una línea, puedes calcular π experimentalmente. <br>
-                        π ≈ (2 * longitud de la aguja * número de lanzamientos) / (cruces * distancia entre líneas)</li>
-                </ul>
-            </article>
 
-            <article>
-                <li><h3>La campana de Gauss</h3></li>
-                <p>Esta es, quizás, la aplicación más omnipresente de π. La famosa "campana" que describe todo, desde las alturas de las personas <br> 
-                    hasta los errores de medición.</p>
-                <ul>
-                    <li>La función de densidad de la distribución normal es:</li>
-                        <figure>
-                            <img src="Img/Formula.png" alt="Formula">
-                        </figure>
-                    <li>¿Por qué está π ahí? La clave está en el factor 1/√(2π). Este término, llamado constante de normalización, asegura que <br>
-                        el área total bajo la curva de la campana sea exactamente 1</li>
+    <main>
+        <!-- Aqui van subtitulos junto junto con listas -->
+        <article>
+            <h3>El problema de la aguja de Buffon</h3>
+            <p>Este es un ejemplo clásico y fascinante que une π con la probabilidad de una manera contraintuitiva.
+            </p>
+            <ul>
+                <li>¿En qué consiste? Imagina que tienes un suelo hecho con listones de madera paralelos, todos del
+                    mismo ancho. <br>
+                    Lanzas una aguja de longitud igual o menor al ancho entre listones al azar sobre el suelo.</li>
+                <li>La probabilidad (P) de que la aguja cruce o toque una de las líneas entre los listones es: <br>
+                    P = (2 * longitud de la aguja) / (π * distancia entre líneas)</li>
+                <li>Si lanzas la aguja muchas veces y cuentas las veces que cruza una línea, puedes calcular π
+                    experimentalmente. <br>
+                    π ≈ (2 * longitud de la aguja * número de lanzamientos) / (cruces * distancia entre líneas)</li>
             </ul>
-            </article>
-        </ol>
+        </article>
+
+        <article>
+            <h3>La campana de Gauss</h3>
+            <p>Esta es, quizás, la aplicación más omnipresente de π. La famosa "campana" que describe todo, desde
+                las alturas de las personas <br>
+                hasta los errores de medición.</p>
+            <ul>
+                <li>La función de densidad de la distribución normal es:</li>
+                <figure>
+                    <img src="Img/Formula.png" alt="Formula">
+                </figure>
+                <li>¿Por qué está π ahí? La clave está en el factor 1/√(2π). Este término, llamado constante de
+                    normalización, asegura que <br>
+                    el área total bajo la curva de la campana sea exactamente 1</li>
+            </ul>
+        </article>
     </main>
 
     <footer>
@@ -71,4 +77,5 @@
     </footer>
 
 </body>
+
 </html>
