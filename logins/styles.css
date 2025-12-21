@@ -8,11 +8,53 @@
     list-style: none;
 }
 
+
+/*NAV*/
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    z-index: 100;
+}
+
+nav a {
+    display: inline-flex;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    background-color: #131313;
+}
+
+/*SUBMENUS*/
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    flex-direction: column;
+}
+
+nav ul li:hover > ul {
+    display: flex;
+}
+
+nav ul ul a:hover {
+    background-color: #131313;
     width: 100%;
 }
 
-body {
+main {
     display: flex;
     justify-content: center;
     align-items: center;
