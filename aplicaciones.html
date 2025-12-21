@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicaciones de Pi</title>
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/aplicaciones.css">
 </head>
-
 <body>
 
     <header>
         <nav>
             <ul>
                 <a href="index.html">Inicio</a>
-                <li><a href="logins/login.html">Cuenta</a>
+                <li><a href="">Cuenta</a>
                     <ul>
                         <li><a href="logins/login.html">Iniciar sesión</a></li>
                         <li><a href="logins/register.html">Registrarse</a></li>
@@ -24,130 +21,48 @@
                 <li><a href="historia.html">Historia del número Pi</a></li>
                 <li><a href="curiosidades.html">Curiosidades del número Pi</a></li>
                 <li>
-                    <a href="aplicaciones.html">Aplicaciones de Pi</a>
+                    <a href="">Aplicaciones de Pi</a>
+                    <ul>
+                        <li><a href="aplicaciones.html">Probabilidad y estadistica</a></li>
+                        <li><a href="tecnologia.html">En la tecnologia</a></li>
+                    </ul>
                 </li>
 
             </ul>
         </nav>
     </header>
-        <div class="titulo">
-            <h1>Aplicaciones de π</h1>
-        </div>
+    
     <main>
-        <div class="secciones-contenedor">
-            <!-- SECCIÓN PROBABILIDAD -->
-            <section class="seccion-aplicacion probabilidad">
-                <div class="seccion-titulo">
-                    <div class="icono-seccion">P</div>
-                    <h2>Probabilidad y Estadística</h2>
-                </div>
+         <!-- Aqui van subtitulos junto junto con listas -->
+        <ol>
+            <article>
+                <li><h3>El problema de la aguja de Buffon</h3></li>
+                <p>Este es un ejemplo clásico y fascinante que une π con la probabilidad de una manera contraintuitiva.</p>
+                <ul>
+                    <li>¿En qué consiste? Imagina que tienes un suelo hecho con listones de madera paralelos, todos del mismo ancho. <br>
+                        Lanzas una aguja de longitud igual o menor al ancho entre listones al azar sobre el suelo.</li>
+                    <li>La probabilidad (P) de que la aguja cruce o toque una de las líneas entre los listones es: <br>
+                        P = (2 * longitud de la aguja) / (π * distancia entre líneas)</li>
+                        <li>Si lanzas la aguja muchas veces y cuentas las veces que cruza una línea, puedes calcular π experimentalmente. <br>
+                        π ≈ (2 * longitud de la aguja * número de lanzamientos) / (cruces * distancia entre líneas)</li>
+                </ul>
+            </article>
 
-                <div class="aplicacion-item">
-                    <div class="aplicacion-titulo" onclick="toggleAplicacion(1)">
-                        <div class="numero-aplicacion">1</div>
-                        <h3>El problema de la aguja de Buffon</h3>
-                    </div>
-                    <div class="aplicacion-contenido" id="aplicacion-1">
-                        <p>Un ejemplo clásico que une π con la probabilidad de manera contraintuitiva.</p>
-                        <ul>
-                            <li>Imagina un suelo con listones de madera paralelos del mismo ancho.</li>
-                            <li>Lanzas una aguja de longitud igual o menor al ancho entre listones.</li>
-                            <li>La probabilidad de que la aguja cruce una línea entre los listones es:</li>
-                        </ul>
-                        <div class="formula">P = (2 × longitud de la aguja) / (π × distancia entre líneas)</div>
-                        <p>Si lanzas la aguja muchas veces y cuentas los cruces, puedes calcular π experimentalmente.</p>
-                    </div>
-                </div>
-
-                <div class="aplicacion-item">
-                    <div class="aplicacion-titulo" onclick="toggleAplicacion(2)">
-                        <div class="numero-aplicacion">2</div>
-                        <h3>La campana de Gauss</h3>
-                    </div>
-                    <div class="aplicacion-contenido" id="aplicacion-2">
-                        <p>La famosa "campana" que describe desde alturas hasta errores de medición.</p>
-                        <p>La función de densidad de la distribución normal es:</p>
-                        <div class="imagen-aplicacion">
-                            <img src="Img/Formula.png" alt="Fórmula de la distribución normal">
-                        </div>
-                        <p>¿Por qué está π ahí? El factor 1/√(2π) es la constante de normalización que asegura que el área total bajo la curva sea exactamente 1.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SECCIÓN TECNOLOGÍA -->
-            <section class="seccion-aplicacion tecnologia">
-                <div class="seccion-titulo">
-                    <div class="icono-seccion">T</div>
-                    <h2>Tecnología</h2>
-                </div>
-
-                <div class="aplicacion-item">
-                    <div class="aplicacion-titulo" onclick="toggleAplicacion(3)">
-                        <div class="numero-aplicacion">1</div>
-                        <h3>Procesamiento de señales</h3>
-                    </div>
-                    <div class="aplicacion-contenido" id="aplicacion-3">
-                        <p>π es un componente crucial en la transformada de Fourier, el algoritmo fundamental detrás del procesamiento de señales digitales.</p>
-                        <div class="imagen-aplicacion">
-                            <img src="Img/Fourier.png" alt="Transformada de Fourier" width="350">
-                        </div>
-                        <p>Esta herramienta descompone señales complejas (voz, audio, imágenes) en sus frecuencias constitutivas, permitiendo compresión y análisis.</p>
-                    </div>
-                </div>
-
-                <div class="aplicacion-item">
-                    <div class="aplicacion-titulo" onclick="toggleAplicacion(4)">
-                        <div class="numero-aplicacion">2</div>
-                        <h3>Sistemas GPS</h3>
-                    </div>
-                    <div class="aplicacion-contenido" id="aplicacion-4">
-                        <p>Los cálculos para determinar la distancia entre satélites y receptores GPS involucran ecuaciones que requieren π con 14 decimales para garantizar precisión.</p>
-                        <div class="imagen-aplicacion">
-                            <img src="Img/GPS.webp" alt="Sistema GPS" width="350">
-                        </div>
-                        <p>Un error minúsculo en π se amplificaría, dando coordenadas incorrectas. La precisión del GPS depende directamente de la precisión de π.</p>
-                    </div>
-                </div>
-
-                <div class="aplicacion-item">
-                    <div class="aplicacion-titulo" onclick="toggleAplicacion(5)">
-                        <div class="numero-aplicacion">3</div>
-                        <h3>Relojes de Péndulo</h3>
-                    </div>
-                    <div class="aplicacion-contenido" id="aplicacion-5">
-                        <p>El periodo de oscilación de un péndulo (tiempo que tarda en ir y volver) depende directamente de π.</p>
-                        <div class="imagen-aplicacion">
-                            <img src="Img/Reloj.png" alt="Reloj de péndulo" width="350">
-                        </div>
-                        <p>Incluso podemos determinar π fuera del ámbito de los círculos usando un péndulo y un cronómetro para medir su periodo de oscilación.</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- SIMULACIÓN INTERACTIVA -->
-        <div class="simulacion-contenedor">
-            <h2>Simulación: La Aguja de Buffon</h2>
-            <p>Simula el lanzamiento de agujas para estimar π experimentalmente</p>
-            
-            <div class="simulacion-controls">
-                <button class="simulacion-btn" onclick="simularLanzamientos(100)">Lanzar 100 agujas</button>
-                <button class="simulacion-btn" onclick="simularLanzamientos(500)">Lanzar 500 agujas</button>
-                <button class="simulacion-btn" onclick="simularLanzamientos(1000)">Lanzar 1000 agujas</button>
-                <button class="simulacion-btn" onclick="reiniciarSimulacion()">Reiniciar</button>
-            </div>
-            
-            <div id="simulacionResultado">
-                <p>Haz clic en un botón para comenzar la simulación.</p>
-            </div>
-            
-            <div id="estadisticasSimulacion" style="margin-top: 1rem; font-size: 0.9rem;">
-                <!-- Estadísticas aparecerán aquí -->
-            </div>
-        </div>
+            <article>
+                <li><h3>La campana de Gauss</h3></li>
+                <p>Esta es, quizás, la aplicación más omnipresente de π. La famosa "campana" que describe todo, desde las alturas de las personas <br> 
+                    hasta los errores de medición.</p>
+                <ul>
+                    <li>La función de densidad de la distribución normal es:</li>
+                        <figure>
+                            <img src="Img/Formula.png" alt="Formula">
+                        </figure>
+                    <li>¿Por qué está π ahí? La clave está en el factor 1/√(2π). Este término, llamado constante de normalización, asegura que <br>
+                        el área total bajo la curva de la campana sea exactamente 1</li>
+            </ul>
+            </article>
+        </ol>
     </main>
-
 
     <footer>
         <p class="copy">&copy; Laboratorio de Introduccion al Desarrollo Web</p>
@@ -156,5 +71,4 @@
     </footer>
 
 </body>
-    <script src="js/aplicacion.js"></script>
 </html>

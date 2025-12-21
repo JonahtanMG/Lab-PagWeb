@@ -9,7 +9,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    background-color: #333;
 }
 nav ul {
     list-style: none;
@@ -18,7 +18,6 @@ nav ul {
 
 nav ul li {
     position: relative;
-    z-index: 100;
 }
 
 nav a {
@@ -29,14 +28,14 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #131313;
+    background-color: #555;
 }
 
 /*SUBMENUS*/
 nav ul ul {
     display: none;
     position: absolute;
-    background-color: #000000;
+    background-color: #444;
     flex-direction: column;
 }
 
@@ -45,7 +44,7 @@ nav ul li:hover > ul {
 }
 
 nav ul ul a:hover {
-    background-color: #131313;
+    background-color: #666;
     width: 100%;
 }
 
@@ -61,7 +60,7 @@ main {
 
 /*FOOTER*/
 footer {
-    background: #000000;
+    background: #333;
     padding: 40px;
     color: #fff;
     text-align: center;

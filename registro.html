@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <hr class="separador">
+            <h1 class="titulo">REGISTRARSE</h1>
+            <!-- Aqui van los hipervinculos -->
+            <hr class="separador">
+        </div>
+        <nav class="nav">
+            <details class="nav_details">
+                <summary class="nav_summary">MENU</summary>
+                <ul class="nav_lista">
+                    <li class="nav_item"><a href="index.html" class="nav_link">Inicio</a></li>
+                    <li class="nav_item"><a href="registro.html" class="nav_link">Registrase</a></li>
+                    <li class="nav_item"><a href="historia.html" class="nav_link">Historia</a></li>
+                    <li class="nav_item"><a href="curiosidades.html" class="nav_link">Curiosidades</a></li>
+                    <li class="nav_item"><a href="tecnologia.html" class="nav_link">En la tecnologia</a></li>
+                    <li class="nav_item"><a href="aplicaciones.html" class="nav_link">Aplicaciones</a></li>
+                </ul>
+            </details>
+        </nav>
+        <hr class="separador">
+    </header>
+
+    <main>
+        <!-- Aqui va un formulario para registrarse -->
+        <form action="#">
+            <h2>Formulario de registro</h2>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" required><br>
+            <label for="apellido">Apellido</label><br>
+            <input type="text" id="apellido" required><br>
+            <label for="correo">Correo electronico</label><br>
+            <input type="email" id="correo" required><br>
+            <label for="contraseña">Ingrese su contraseña</label><br>
+            <input type="password" minlength="6" maxlength="12" required><br>
+            <label for="validar_contraseña">Confirmar contraseña</label><br>
+            <input type="password" minlength="6" maxlength="12" required><br>
+            <div class="check">
+                <input type="checkbox" id="check" required><label for="check">Aceptar terminos y condiciones</label>
+                <br>
+                <input type="checkbox" id="noticias"><label for="noticas">Recibir noticias al correo</label>
+            </div>
+            <button type="submit">Enviar</button><button type="reset">Borrar</button>
+        </form>
+        <!-- Aqui va un hipervinculo para volver arriba -->
+        <hr class="separador">
+        <div class="arriba">
+            <a href="#Top" class="boton_arriba">
+                <span>Volver arriba</span>
+            </a>
+        </div>
+        <hr class="separador">
+    </main>
+    <footer class="footer">
+        <div class="contenedor_footer">
+            <p class="copy">&copy; Laboratorio de Introduccion al Desarrollo Web</p>
+            <address class="copy">Contacto: <a href="mailto:jmamanigut@unsa.edu.pe"
+                    class="email">jmamanigut@unsa.edu.pe</a></address>
+        </div>
+    </footer>
+
+</body>
+
+</html>
