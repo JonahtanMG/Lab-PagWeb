@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades de Pi</title>
+    <link rel="stylesheet" href="../static/css/general.css">
+    <link rel="stylesheet" href="../static/css/curiosidades.css">
+</head>
+<body>
+   
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html">Inicio</a>
+                <li><a href="auth/login.html">Cuenta</a>
+                    <ul>
+                        <li><a href="auth/login.html">Iniciar sesión</a></li>
+                        <li><a href="auth/register.html">Registrarse</a></li>
+                    </ul>
+                </li>
+                <li><a href="historia.html">Historia del número Pi</a></li>
+                <li><a href="curiosidades.html">Curiosidades del número Pi</a></li>
+                <li>
+                    <a href="aplicaciones.html">Aplicaciones de Pi</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+        <section class="titulo">
+            <h1>Curiosidades de π</h1>
+        </section>
+    <main>
+        <!-- Aqui van parrafos e imagenes -->
+        <div class="contenedor_dividido">
+            <article>
+                <h3>El día de Pi:</h3>
+                <p>Por la forma en que se escribe la fecha en la notación empleada en Estados Unidos, el 14 de marzo (3/14) <br>
+                se ha convertido en una celebración no oficial para el “Día Pi”, que ha derivado de la aproximación de tres <br>
+                dígitos de pi: 3,14. Habitualmente, la celebración se concentra a la 01:59 p. m. (en reconocimiento de la <br>
+                aproximación de seis dígitos: 3,14159).
+                </p>
+            </article>
+
+            <figure>
+                <img src="../static/Img/DiaPi.png" alt="Imagen_DiaPi" width="350">     
+                <p><a href="https://www.piday.org/">Más información</a></p>   
+            </figure>
+        </div>
+        
+        <div class="contenedor_dividido">
+            <figure>
+                <img src="../static/Img/Record.png" alt="Imagen_Record" width="350">
+                <p><a href="https://www.timesnownews.com/viral/pi-day-2023-meet-rajveer-meena-who-recited-70000-pi-digits-blindfolded-article-98605930">Más información</a></p>
+            </figure>
+            <article>
+                <h3>Récords de memorización:</h3>
+                <p>El récord mundial Guinness lo tiene Rajveer Meena (India), quien recitó 70,000 decimales de π en 2015. <br>
+                Tardó más de 10 horas.
+                </p>
+            </article>
+        </div>
+        
+        <div class="contenedor_dividido">
+            <article>
+                <h3>Piems (Poemas de Pi):</h3>
+                <p>Son poemas donde la longitud de cada palabra representa un dígito de π.</p>
+                    <ul>
+                        <li><b>Ejemplo:</b> "How I need a drink, alcoholic of course, after the heavy lectures involving quantum <br>
+                        mechanics!" (3.14159265358979)</li>
+                    </ul>
+            </article>
+        </div>
+        
+        <div class="contenedor_dividido">
+            <article>
+                <h3>Albert Einstein y Pi</h3>
+                <p> La fecha de celebración del número Pi coincide con la fecha de nacimiento del físico alemán Albert Einstein que nació el 14 de marzo de 1879.</p>
+            </article>
+            <figure>
+                <img src="../static/Img/einsteinpi.png" alt="Imagen_Record" width="350">
+            </figure>
+        </div>
+
+        <div class="contenedor_dividido">
+            <figure>
+                <img src="../static/Img/Ludolph.jpg" alt="Imagen_Record" width="350">
+            </figure>
+            <article>
+                <h3>PI y Ludolph van Ceulen</h3>
+                <p>El número Pi era tan atractivo que un matemático holandés-alemán, Ludolph van Ceulen, pasó la mayor parte de su vida calculando los primeros 36 dígitos de Pi. Se dice que los primeros 36 números fueron grabados en su lápida.</p>
+            </article>
+        </div>
+
+        <article class="prueba-pi-simple">
+            <h3>Prueba tu memoria de π</h3>
+            <p>Escribe los dígitos de π que recuerdes:</p>
+            
+            <div class="contenedor-input">
+                <div class="input-pi">
+                    <span class="prefijo">3.</span>
+                    <input type="text" id="digitosPi" maxlength="30" placeholder="14159...">
+                </div>
+                <button id="verificarBtn" class="btn-verificar">Verificar</button>
+            </div>
+            
+            <div class="resultado-simple" id="resultadoContainer"></div>
+        </article>
+
+    </main>
+    
+    <footer>
+        <p class="copy">&copy; Laboratorio de Introduccion al Desarrollo Web</p>
+        <address class="copy">Contacto: <a href="mailto:jmamanigut@unsa.edu.pe" class="email">jmamanigut@unsa.edu.pe</a>
+        </address>
+    </footer>
+
+</body>
+    <script src="../static/js/numeros_pi.js"></script>
+</html>

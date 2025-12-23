@@ -1,0 +1,231 @@
+body {
+    color: #333;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: justify;
+}
+
+.titulo {
+    background-image: url("../Img/aplicacion.png");
+    background-position: center; 
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    overflow: hidden; 
+    z-index: 1;
+}
+
+.titulo h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+    position: relative;
+    z-index: 2;
+    padding: 1rem 2rem;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* CONTENEDOR DE SECCIONES */
+.secciones-contenedor {
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* TARJETAS DE APLICACIÓN */
+.seccion-aplicacion {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.seccion-aplicacion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.seccion-titulo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.seccion-titulo h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.icono-seccion {
+    width: 50px;
+    height: 50px;
+    background: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* APLICACIONES INDIVIDUALES */
+.aplicacion-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.aplicacion-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.aplicacion-titulo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.aplicacion-titulo h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    transition: color 0.3s;
+}
+
+.numero-aplicacion {
+    background: #f8f9fa;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #000000;
+    border: 2px solid #000000;
+    flex-shrink: 0;
+}
+
+.aplicacion-titulo:hover h3 {
+    color: #696969;
+}
+
+.aplicacion-contenido {
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.aplicacion-contenido p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.aplicacion-contenido ul {
+    padding-left: 1.2rem;
+    margin: 1rem 0;
+}
+
+.aplicacion-contenido li {
+    margin-bottom: 0.5rem;
+}
+
+/* IMÁGENES */
+.imagen-aplicacion {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.imagen-aplicacion img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagen-aplicacion img:hover {
+    transform: scale(1.02);
+}
+
+.formula {
+    font-family: 'Courier New', monospace;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* SIMULACIÓN INTERACTIVA */
+.simulacion-contenedor {
+    background: #000000;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 3rem 0;
+    color: white;
+    text-align: center;
+}
+
+.simulacion-contenedor h2 {
+    margin-top: 0;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.simulacion-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.simulacion-btn {
+    padding: 0.8rem 1.5rem;
+    background: white;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.simulacion-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#simulacionResultado {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+}
